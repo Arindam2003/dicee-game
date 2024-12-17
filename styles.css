@@ -2,24 +2,26 @@
   width: 70%;
   margin: auto;
   text-align: center;
+  background-color: rgba(36, 5, 85, 0.908);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .dice {
   text-align: center;
   display: inline-block;
-
 }
 
 body {
-  background-color: #393E46;
+  background-color: #5e93e7;
 }
 
 h1 {
   margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
-  color: #4ECCA3;
+  font-size: 60px;
+  color: #e7d10b;
 }
 
 p {
@@ -30,12 +32,83 @@ p {
 
 img {
   width: 80%;
+  max-width: 300px; /* Default max width for larger screens */
 }
 
 footer {
   margin-top: 5%;
-  color: #EEEEEE;
+  color: #040404;
   text-align: center;
   font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
 
+button {
+  color: red;
+  font-weight: bold;
+  background-color: rgb(234, 230, 230);
+  box-shadow: 1px 1px 5px black;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    margin-top: 15%;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  /* Flexbox for Aligning Two Images in the Same Row */
+  .image-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-around; /* Spaces images evenly */
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: wrap; /* Wraps images if there's not enough space */
+  }
+
+  .image-container img {
+    width: 45%; /* Each image takes 45% of the container */
+    max-width: none; /* Remove max-width to allow flexible resizing */
+    margin: 10px 0; /* Add some margin between rows */
+  }
+}
+
+/* Media Query for Very Small Screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .image-container img {
+    width: 100%; /* Images stack on top of each other for very small screens */
+    margin: 10px 0;
+  }
 }
