@@ -16,8 +16,13 @@ function random(){
     if(randomNumber1>randomNumber2)
     {
         document.querySelector("h1").innerHTML="Motu Win"
-    }else{
+    }
+    else if(randomNumber1<randomNumber2)
+    {
         document.querySelector("h1").innerHTML="Patlu Win"
+    }
+    else{
+        document.querySelector("h1").innerHTML="Match Draw"
     }
 }
 
