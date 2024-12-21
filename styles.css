@@ -55,42 +55,37 @@ button {
 }
 
 /* Media Query for Mobile Screens */
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  footer {
-    font-size: 1rem;
-    margin-top: 15%;
-  }
-
-  button {
-    font-size: 1rem;
-    padding: 10px 15px;
-  }
-
-  /* Flexbox for Aligning Two Images in the Same Row */
-  .image-container {
-    display: flex; /* Enables Flexbox */
-    justify-content: space-around; /* Spaces images evenly */
-    align-items: center; /* Aligns items vertically */
-    flex-wrap: wrap; /* Wraps images if there's not enough space */
-  }
-
-  .image-container img {
-    width: 45%; /* Each image takes 45% of the container */
-    max-width: none; /* Remove max-width to allow flexible resizing */
-    margin: 10px 0; /* Add some margin between rows */
-  }
+@media screen and (max-width: 768px){
+.container {
+  width: 90%;
+  /* background-color: red !important; */
+}
+h1 {
+  font-size: 40px;
+}
+p {
+  font-size: 1.2rem;
+}
+footer {
+  font-size: 1rem;
+  margin-top: 15%;
+}
+button {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+/* Flexbox for Aligning Two Images in the Same Row */
+.image-container {
+  display: flex; /* Enables Flexbox */
+  justify-content: space-around; /* Spaces images evenly */
+  align-items: center; /* Aligns items vertically */
+  flex-wrap: wrap; /* Wraps images if there's not enough space */
+}
+.image-container img {
+  width: 45%; /* Each image takes 45% of the container */
+  max-width: none; /* Remove max-width to allow flexible resizing */
+  margin: 10px 0; /* Add some margin between rows */
+}
 }
 
 /* Media Query for Very Small Screens */
